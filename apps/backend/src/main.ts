@@ -27,7 +27,7 @@ app.use('/api/questions', questionsRouter);
 
 // define root route
 app.get('/api/hello', (_, res) => {
-  res.json({ message: 'Hello, frontend!' });
+  res.json({ message: 'Hello, wow now!' });
 });
 
 const errorHandler: ErrorRequestHandler = (err, req, res, next) => {
@@ -49,3 +49,5 @@ app.listen(PORT, () => {
 
 // mongodb+srv://armanash:Armie101@cluster0.qga3m9z.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 // mongodb+srv://armanash:<password>@cluster0.qga3m9z.mongodb.net/
+// mongodb+srv://armanash:Armie101@cluster0.qga3m9z.mongodb.net/
+

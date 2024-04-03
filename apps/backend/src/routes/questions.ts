@@ -16,7 +16,7 @@ router.get('/', async (req, res, next) => {
 
 router.post('/add', requireAuth, async (req, res, next) => {
   const { questionText } = req.body;
-  const author = req.session!.userId;
+  const author = req.session!.username;
   try {
     const question = new Question({ questionText, author });
     await question.save();
